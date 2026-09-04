@@ -130,6 +130,15 @@ function App() {
             </div>
 
             <div className="card-evento">
+              <h4>Maratona de Programação SBC</h4>
+              <div className="fotos-duplas-container">
+                <img src="/img/WhatsApp Image 2026-09-03 at 21.17.34.jpeg" alt="Equipe Maratona SBC" className="evento-img-pequena" style={{ objectPosition: 'top' }} />
+                <img src="/img/WhatsApp Image 2026-09-03 at 21.17.34 (1).jpeg" alt="Maria Luiza na Maratona SBC" className="evento-img-pequena" style={{ objectPosition: 'top' }} />
+              </div>
+              <p><strong>Experiência extraordinária com as meninas</strong><br />Participação com o mesmo time anterior, "Às quartas usamos java", com Gabriela do Vale e Mariana Sanches.</p>
+            </div>
+
+            <div className="card-evento">
               <h4>NASA Space Apps Challenge</h4>
               <img src="/assets/nasa.jpg" alt="Nasa Space Apps" className="evento-img" />
               <p><strong>Jogo educativo com dados da NASA</strong><br />Desenvolvimento de uma solução para a lacuna de conhecimento sobre ações climáticas na agricultura. Um jogo que usa dados reais da NASA para salvar fazendas de crises climáticas.</p>
