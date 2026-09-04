@@ -11,13 +11,16 @@ class PortfolioNavigation {
     addSmoothScrolling() {
         this.navLinks.forEach(link => {
             link.addEventListener('click', (event) => {
-                event.preventDefault();
                 const targetId = link.getAttribute('href');
                 if (targetId && targetId.startsWith('#')) {
+                    event.preventDefault();
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
+                        const headerOffset = 80;
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
                         window.scrollTo({
-                            top: targetElement.offsetTop - 50, // Ajuste para o tamanho do header
+                            top: offsetPosition,
                             behavior: 'smooth'
                         });
                     }

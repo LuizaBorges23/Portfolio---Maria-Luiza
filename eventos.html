@@ -1,77 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos | Maria Luiza</title>
+    <title>Eventos & Maratonas | Maria Luiza</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Importando fonte do Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
     <!-- Ícones (FontAwesome) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header style="padding-bottom: 20px;">
-        <div class="logo">Eventos</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html"><i class="fas fa-arrow-left"></i> Voltar para o Portfólio</a></li>
-            </ul>
-        </nav>
+    <!-- Cabeçalho / Navbar -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Maria Luiza<span class="dot">.</span></a>
+            <nav>
+                <a href="index.html" class="btn-voltar">
+                    <i class="fas fa-arrow-left"></i> Voltar ao Portfólio
+                </a>
+            </nav>
+        </div>
     </header>
 
     <main>
         <!-- Seção Eventos -->
         <section id="eventos" class="container">
-            <h2 class="section-title">Eventos</h2>
+            <div class="eventos-header-wrap">
+                <span class="badge badge-accent" style="margin-bottom: 12px;">Trajetória & Conquistas</span>
+                <h2 class="section-title">Eventos & Maratonas</h2>
+                <p class="eventos-subtitle">Competições de programação, hackathons e conferências tecnológicas que impulsionam meu crescimento como desenvolvedora.</p>
+            </div>
+
             <div class="eventos-grid">
                 
+                <!-- Card 1: Maratona Feminina -->
                 <div class="card-evento">
+                    <div class="card-evento-header">
+                        <span class="badge badge-gold"><i class="fas fa-trophy"></i> 4º Lugar</span>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="far fa-calendar-alt"></i> Maratona</span>
+                    </div>
                     <h4>Maratona de Programação Feminina</h4>
-                    <img src="img/Design sem nome (2).png" alt="Maratona Feminina" class="evento-img">
+                    <div class="evento-img-wrapper">
+                        <img src="img/Design sem nome (2).png" alt="Maratona Feminina" class="evento-img">
+                    </div>
                     <p><strong>4º Lugar (Sede Local)</strong><br>Participação em desafios intensos de lógica de programação e algoritmos, competindo ao lado de outras mulheres e consolidando habilidades sob pressão.</p>
                 </div>
 
+                <!-- Card 2: Maratona Nordestina -->
                 <div class="card-evento">
+                    <div class="card-evento-header">
+                        <span class="badge badge-accent"><i class="fas fa-code"></i> Regional</span>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="far fa-calendar-alt"></i> Maratona</span>
+                    </div>
                     <h4>Maratona Nordestina de Programação</h4>
-                    <img src="img/WhatsApp Image 2026-09-03 at 21.17.33.jpeg" alt="Maratona Nordestina de Programação" class="evento-img" style="object-position: 50% 35%;">
+                    <div class="evento-img-wrapper">
+                        <img src="img/WhatsApp Image 2026-09-03 at 21.17.33.jpeg" alt="Maratona Nordestina de Programação" class="evento-img" style="object-position: 50% 35%;">
+                    </div>
                     <p><strong>Minha 2° maratona de programação</strong><br>Participei em equipe com o nome "Às quartas usamos java" com Gabriela do Vale e Laís.</p>
                 </div>
 
+                <!-- Card 3: Maratona SBC -->
                 <div class="card-evento">
+                    <div class="card-evento-header">
+                        <span class="badge badge-purple"><i class="fas fa-users"></i> SBC Oficial</span>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="far fa-calendar-alt"></i> Maratona</span>
+                    </div>
                     <h4>Maratona de Programação SBC</h4>
                     <div class="fotos-duplas-container">
-                        <img src="img/WhatsApp Image 2026-09-03 at 21.17.34.jpeg" alt="Equipe Maratona SBC" class="evento-img-pequena" style="object-position: top;">
-                        <img src="img/WhatsApp Image 2026-09-03 at 21.17.34 (1).jpeg" alt="Maria Luiza na Maratona SBC" class="evento-img-pequena" style="object-position: top;">
+                        <div class="evento-img-pequena-wrap">
+                            <img src="img/WhatsApp Image 2026-09-03 at 21.17.34.jpeg" alt="Equipe Maratona SBC" class="evento-img-pequena" style="object-position: top;">
+                        </div>
+                        <div class="evento-img-pequena-wrap">
+                            <img src="img/WhatsApp Image 2026-09-03 at 21.17.34 (1).jpeg" alt="Maria Luiza na Maratona SBC" class="evento-img-pequena" style="object-position: top;">
+                        </div>
                     </div>
                     <p><strong>Experiência extraordinária com as meninas</strong><br>Participação com o mesmo time anterior, "Às quartas usamos java", com Gabriela do Vale e Mariana Sanches.</p>
                 </div>
 
+                <!-- Card 4: NASA Space Apps -->
                 <div class="card-evento">
+                    <div class="card-evento-header">
+                        <span class="badge badge-accent"><i class="fas fa-globe"></i> NASA Challenge</span>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="far fa-calendar-alt"></i> Hackathon</span>
+                    </div>
                     <h4>NASA Space Apps Challenge</h4>
-                    <img src="img/Design sem nome (4).png" alt="Nasa Space Apps" class="evento-img">
+                    <div class="evento-img-wrapper">
+                        <img src="img/Design sem nome (4).png" alt="Nasa Space Apps" class="evento-img">
+                    </div>
                     <p><strong>Jogo educativo com dados da NASA</strong><br>Desenvolvimento de uma solução para a lacuna de conhecimento sobre ações climáticas na agricultura. Um jogo que usa dados reais da NASA para salvar fazendas de crises climáticas.</p>
                 </div>
 
+                <!-- Card 5: Meu Primeiro Hackathon -->
                 <div class="card-evento">
-                    <h4>Meu Primeiro Hackathon</h4>
-                    <img src="img/Design sem nome (1).png" alt="Primeiro Hackathon" class="evento-img">
-                    <p>Protótipo para acessibilidade Turística. Imersão no desenvolvimento de soluções inclusivas focadas em melhorar a experiência de acessibilidade para turistas, unindo impacto social e tecnologia.</p>
-                </div>
-
-                <div class="card-evento">
-                    <h4>Imersão no Ecossistema Tech</h4>
-                    
-                    <!-- Novo container para as duas fotos -->
-                    <div class="fotos-duplas-container">
-                        <img src="img/Design sem nome (8).png" alt="Bahia Tech Experience" class="evento-img-pequena">
-                        <img src="img/Design sem nome.png" alt="Evento BAIA" class="evento-img-pequena">
+                    <div class="card-evento-header">
+                        <span class="badge badge-gold"><i class="fas fa-lightbulb"></i> Inclusão Social</span>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="far fa-calendar-alt"></i> Hackathon</span>
                     </div>
-
-                    <p>Participação ativa em grandes eventos de inovação, como o <strong>Bahia Tech Experience</strong> e o <strong>BAIA</strong>, buscando constante atualização sobre tendências de mercado, networking e evolução na área de Engenharia de Software.</p>
+                    <h4>Meu Primeiro Hackathon</h4>
+                    <div class="evento-img-wrapper">
+                        <img src="img/Design sem nome (1).png" alt="Primeiro Hackathon" class="evento-img">
+                    </div>
+                    <p><strong>Protótipo para Acessibilidade Turística</strong><br>Imersão no desenvolvimento de soluções inclusivas focadas em melhorar a experiência de acessibilidade para turistas, unindo impacto social e tecnologia.</p>
                 </div>
+
+                <!-- Card 6: Imersão Tech -->
+                <div class="card-evento">
+                    <div class="card-evento-header">
+                        <span class="badge badge-purple"><i class="fas fa-network-wired"></i> Ecossistema</span>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="far fa-calendar-alt"></i> Conferência</span>
+                    </div>
+                    <h4>Imersão no Ecossistema Tech</h4>
+                    <div class="fotos-duplas-container">
+                        <div class="evento-img-pequena-wrap">
+                            <img src="img/Design sem nome (8).png" alt="Bahia Tech Experience" class="evento-img-pequena">
+                        </div>
+                        <div class="evento-img-pequena-wrap">
+                            <img src="img/Design sem nome.png" alt="Evento BAIA" class="evento-img-pequena">
+                        </div>
+                    </div>
+                    <p><strong>Bahia Tech Experience & BAIA</strong><br>Participação ativa em grandes eventos de inovação, buscando constante atualização sobre tendências de mercado, networking e evolução na Engenharia de Software.</p>
+                </div>
+
             </div>
         </section>
     </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2026 Maria Luiza Borges <span class="dot">•</span> Desenvolvido com carinho e dedicação</p>
+    </footer>
 </body>
 </html>
